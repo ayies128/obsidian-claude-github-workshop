@@ -146,6 +146,41 @@ theme: default
 
 ---
 
+# デモ: Webスクレイピング
+
+## Claude Code でスクレイピングツールを作成
+
+---
+
+## 実行例
+
+```bash
+$ npm run scrape
+
+30件の商品を取得しました
+CSVファイルを出力しました: buyma_products.csv
+```
+
+---
+
+## 出力CSV
+
+```csv
+商品名,ブランド,価格,URL
+"SATUR Waffle T-shirt","SATUR","¥8,900","https://..."
+"STUSSY Basic Thermal","STUSSY","¥18,900","https://..."
+```
+
+---
+
+## ポイント
+
+- Claude Code に「〇〇をスクレイピングして」と言うだけ
+- **環境構築からデバッグまで自動**
+- **サイト構造が変わっても修正依頼するだけ**
+
+---
+
 # 運用ルール（シンプルで強い）
 
 ---

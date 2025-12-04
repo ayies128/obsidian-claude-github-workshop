@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_vs_notion.md",
+                "file": "02_goal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_vs_notion"
+              "title": "02_goal"
             }
           }
         ]
@@ -185,6 +185,13 @@
   },
   "active": "3ca92fa6a6c5de26",
   "lastOpenFiles": [
+    "01_title.md",
+    "02_goal.md",
+    "09_demo_scraping.md",
+    "04_vs_notion.md",
+    "12_summary.md",
+    "11_obsidian_sync.md",
+    "10_rules.md",
     "00_presentation.md.tmp.64073.1764862856342",
     "03_tools.md",
     "11_summary.md",
@@ -194,15 +201,12 @@
     "07_practice3.md",
     "06_practice2.md",
     "05_practice1.md",
-    "04_vs_notion.md",
     "04_practice1.md",
-    "02_goal.md",
     "09_obsidian_sync.md",
     "08_rules.md",
     "07_demo_nextjs_lp.md",
     "06_practice3.md",
     "05_practice2.md",
-    "01_title.md",
     "00_presentation.md",
     "10_summary.md",
     "10_summary_temp.md",
