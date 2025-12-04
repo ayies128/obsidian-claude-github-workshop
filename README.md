@@ -4,7 +4,7 @@
 
 ## 構成
 
-- `documents/` - ドキュメント（10ページ）
+- `documents/` - ドキュメント（11ページ）
 
 ## 使い方
 
@@ -16,10 +16,11 @@
 1. タイトル
 2. 今日のゴール
 3. 3つのツールの役割
-4. 実践① Obsidianをプロジェクトに置く意味
-5. 実践② 仕様書からテストコード自動生成
-6. 実践③ GitHub × Obsidianで生きてるドキュメント
-7. デモ: Next.jsでLP作成
-8. 運用ルール
-9. Obsidian Sync
-10. まとめ
+4. Obsidian vs Notion
+5. 実践① Obsidianをプロジェクトに置く意味
+6. 実践② 仕様書からテストコード自動生成
+7. 実践③ GitHub × Obsidianで生きてるドキュメント
+8. デモ: Next.jsでLP作成
+9. 運用ルール
+10. Obsidian Sync
+11. まとめ

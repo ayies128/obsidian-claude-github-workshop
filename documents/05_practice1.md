@@ -32,5 +32,5 @@ my-project/
 
 ## 関連スライド
 
-- 前へ: [[03_tools|3つのツールの役割]]
-- 次へ: [[05_practice2|実践② テストコード自動生成]]
+- 前へ: [[04_vs_notion|Obsidian vs Notion]]
+- 次へ: [[06_practice2|実践② テストコード自動生成]]

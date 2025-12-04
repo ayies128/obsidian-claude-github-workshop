@@ -49,6 +49,6 @@ graph LR
 
 ## 関連スライド
 
-- 前へ: [[09_obsidian_sync|Obsidian Sync]]
+- 前へ: [[10_obsidian_sync|Obsidian Sync]]
 - 最初へ: [[01_title|タイトル]]
 - 全体: [[00_presentation|プレゼンテーション全体]]

@@ -26,4 +26,4 @@ graph LR
 ## 関連スライド
 
 - 前へ: [[02_goal|今日のゴール]]
-- 次へ: [[04_practice1|実践① Obsidianをプロジェクトに置く]]
+- 次へ: [[04_vs_notion|Obsidian vs Notion]]

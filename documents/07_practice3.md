@@ -38,5 +38,5 @@ docs/specs/order.md の仕様書を更新してください
 
 ## 関連スライド
 
-- 前へ: [[05_practice2|実践② テストコード自動生成]]
-- 次へ: [[07_demo_nextjs_lp|デモ: Next.js LP作成]]
+- 前へ: [[06_practice2|実践② テストコード自動生成]]
+- 次へ: [[08_demo_nextjs_lp|デモ: Next.js LP作成]]

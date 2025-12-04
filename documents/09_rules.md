@@ -64,5 +64,5 @@ docs/specs/ 内の仕様と src/ のコードを比較して、
 
 ## 関連スライド
 
-- 前へ: [[07_demo_nextjs_lp|デモ: Next.js LP作成]]
-- 次へ: [[09_obsidian_sync|Obsidian Sync]]
+- 前へ: [[08_demo_nextjs_lp|デモ: Next.js LP作成]]
+- 次へ: [[10_obsidian_sync|Obsidian Sync]]
