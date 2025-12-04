@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_why_github.md",
+                "file": "01_title.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_why_github"
+              "title": "01_title"
             }
           }
         ]
@@ -185,13 +185,13 @@
   },
   "active": "3ca92fa6a6c5de26",
   "lastOpenFiles": [
+    "04_why_github.md",
     "03_tools.md",
     "02_goal.md",
     "01_title.md",
     "13_summary.md.tmp.64073.1764864584075",
     "00_presentation.md.tmp.64073.1764864548186",
     "00_presentation.md",
-    "04_why_github.md",
     "11_rules.md.tmp.64073.1764864454731",
     "09_demo_nextjs_lp.md.tmp.64073.1764864451278",
     "08_practice3.md.tmp.64073.1764864450083",

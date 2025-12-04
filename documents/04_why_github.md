@@ -110,7 +110,7 @@ AI時代 = **大量のコンテンツが生成される時代**
 
 実は**GitHub管理**されています 🐙
 
-https://github.com/ayies128/obsidian_presentation
+https://github.com/ayies128/obsidian-claude-github-workshop
 
 ---
 
