@@ -56,10 +56,118 @@ app/
 
 ---
 
+## Step 4: テストコードも自動生成
+
+### Claude への依頼
+
+```
+Pricingコンポーネントのテストを書いてください。
+Vitestを使用してください。
+```
+
+---
+
+## 生成されるテストコード
+
+```typescript
+// __tests__/Pricing.test.tsx
+import { render, screen } from '@testing-library/react'
+import { describe, it, expect } from 'vitest'
+import Pricing from '@/components/Pricing'
+
+describe('Pricing', () => {
+  it('3つのプランが表示される', () => {
+    render(<Pricing />)
+
+    expect(screen.getByText('スタータープラン')).toBeInTheDocument()
+    expect(screen.getByText('プロプラン')).toBeInTheDocument()
+    expect(screen.getByText('エンタープライズ')).toBeInTheDocument()
+  })
+
+  it('各プランに価格が表示される', () => {
+    render(<Pricing />)
+
+    expect(screen.getByText('¥980/月')).toBeInTheDocument()
+    expect(screen.getByText('¥2,980/月')).toBeInTheDocument()
+    expect(screen.getByText('お問い合わせ')).toBeInTheDocument()
+  })
+
+  it('CTAボタンがクリックできる', () => {
+    render(<Pricing />)
+
+    const buttons = screen.getAllByRole('button')
+    expect(buttons).toHaveLength(3)
+  })
+})
+```
+
+---
+
+## デモ①: テストが通る様子
+
+```bash
+$ npm run test
+
+ ✓ __tests__/Pricing.test.tsx (3)
+   ✓ Pricing
+     ✓ 3つのプランが表示される
+     ✓ 各プランに価格が表示される
+     ✓ CTAボタンがクリックできる
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+```
+
+> 仕様通りに実装されていることが**自動で検証**される
+
+---
+
+## デモ②: バグを入れるとテストが落ちる
+
+### わざとプラン名を変更してみる
+
+```typescript
+// components/Pricing.tsx
+- <h3>スタータープラン</h3>
++ <h3>ビギナープラン</h3>  // ← 間違えた！
+```
+
+---
+
+## テスト結果: 失敗！
+
+```bash
+$ npm run test
+
+ ❌ __tests__/Pricing.test.tsx (3)
+   ❌ Pricing
+     ❌ 3つのプランが表示される
+       TestingLibraryElementError:
+       Unable to find an element with the text: スタータープラン
+     ✓ 各プランに価格が表示される
+     ✓ CTAボタンがクリックできる
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+```
+
+> 仕様と実装のズレを**即座に検知**！
+
+---
+
+## テスト駆動のメリット
+
+1. **仕様変更に気づける** - 意図しない変更を検知
+2. **リファクタリングが安心** - 壊れたらすぐ分かる
+3. **ドキュメント代わり** - テストが仕様書になる
+
+---
+
 ## ポイント
 
 - **仕様が明確**なほど、生成精度が上がる
 - **コンポーネント分割**も自動で提案される
+- **テストコード**も仕様から自動生成
 - **修正依頼**も自然言語でOK
   - 「ヒーローの背景をグラデーションにして」
   - 「料金プランを4つに増やして」
@@ -71,12 +179,17 @@ app/
 ```mermaid
 graph TD
     A[Obsidianで仕様作成] --> B[Claude Codeで生成]
-    B --> C[プレビュー確認]
-    C --> D{修正必要?}
-    D -->|Yes| E[仕様を更新]
-    E --> B
-    D -->|No| F[GitHubにcommit]
-    F --> G[デプロイ]
+    B --> C[テストコード生成]
+    C --> D[テスト実行]
+    D --> E{テスト通過?}
+    E -->|No| F[修正]
+    F --> D
+    E -->|Yes| G[プレビュー確認]
+    G --> H{修正必要?}
+    H -->|Yes| I[仕様を更新]
+    I --> B
+    H -->|No| J[GitHubにcommit]
+    J --> K[デプロイ]
 ```
 
 ---
